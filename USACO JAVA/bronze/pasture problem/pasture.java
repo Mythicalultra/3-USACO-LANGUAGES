@@ -4,8 +4,8 @@ import java.util.stream.Collectors;
 
 public class pasture {
     public static void main(String[] args) throws Exception {
-        System.setIn(new FileInputStream("Square.in"));
-        System.setOut(new PrintStream(new FileOutputStream("Square.out")));
+        System.setIn(new FileInputStream("square.in"));
+        System.setOut(new PrintStream(new FileOutputStream("square.out")));
 
         Scanner input = new Scanner(System.in);
 
@@ -24,7 +24,7 @@ public class pasture {
     int lowy = Math.min(rect1.get(1), rect2.get(1));
     int highy = Math.max(rect1.get(3), rect2.get(3));
 
-    int area = Math.max(highx - lowx, highy - lowy) * Math.max(highx - lowx, highy - lowy)
+    int area = Math.max(highx - lowx, highy - lowy) * Math.max(highx - lowx, highy - lowy);
     System.out.println(area);
     }
 }
